@@ -1,0 +1,197 @@
+** page.module.css **
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 240px;
+  background-color: #0b2559;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navList a {
+  text-decoration: none;
+  color: white;
+}
+
+.navList li.active{
+  background-color: wheat; /* slight white overlay */
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.logout {
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+}
+
+.mainContent {
+    flex: 1;
+  background: #f7f7f7;
+  padding: 30px;
+  overflow-y: auto;
+  position: fixed;
+  width: 800px;
+  left: 350px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.searchBar {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.profile {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.addBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f1f1f1;
+}
+
+.editBtn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.deleteBtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .navList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    padding-top: 40px;
+  }
+
+  .mainContent {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

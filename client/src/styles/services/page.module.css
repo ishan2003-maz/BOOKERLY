@@ -1,0 +1,383 @@
+.body {
+    min-height: 100vh;
+    padding: 42px 24px 96px;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(122, 74, 255, 0.18), transparent 30%),
+        linear-gradient(180deg, #f7f5ff 0%, #ffffff 34%, #f8f6ff 100%);
+}
+
+.heroSection {
+    max-width: 1180px;
+    margin: 30px auto 34px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #7a4aff;
+    font-size: 1.84rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.services {
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: clamp(2.4rem, 2vw, 2rem);
+    line-height: 1.08;
+    color: #180d48;
+    font-family: open-bold, Arial, Helvetica, sans-serif;
+}
+
+.lead {
+    max-width: 720px;
+    margin: 18px auto 0;
+    color: #586080;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.serviceGrid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.serviceCard {
+    --service-accent: #7a4aff;
+    --service-soft: rgba(122, 74, 255, 0.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at top right, var(--service-soft), transparent 38%),
+        rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(122, 74, 255, 0.1);
+    box-shadow: 0 26px 70px rgba(34, 24, 79, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+.serviceCard:hover {
+    transform: translateY(-4px);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    box-shadow: 0 32px 78px rgba(34, 24, 79, 0.14);
+}
+
+.cardBadge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    padding: 0.48rem 0.82rem;
+    border-radius: 999px;
+    background: rgba(17, 14, 53, 0.78);
+    color: #f6f3ff;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cardMedia {
+    position: relative;
+    padding: 18px 18px 0;
+}
+
+.cardImage {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+    box-shadow: 0 18px 38px rgba(25, 17, 58, 0.14);
+}
+
+.cardContent {
+    position: relative;
+    z-index: 1;
+    padding: 22px 22px 24px;
+}
+
+.cardTitle {
+    margin: 0;
+    color: #170d48;
+    font-size: 1.75rem;
+    font-family: open-bold, Arial, Helvetica, sans-serif;
+}
+
+.cardDescription {
+    margin: 14px 0 0;
+    color: #55607f;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.cardMetaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.metaChip {
+    padding: 0.58rem 0.88rem;
+    border-radius: 999px;
+    background: var(--service-soft);
+    color: #2a245d;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.cardButton {
+    margin-top: 22px;
+    border: none;
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    background: linear-gradient(135deg, var(--service-accent), #1a1262);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 18px 32px rgba(26, 18, 98, 0.18);
+}
+
+.cardButton:hover {
+    filter: brightness(1.03);
+}
+
+.cardGlow {
+    position: absolute;
+    right: -48px;
+    bottom: -48px;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    background: var(--service-soft);
+    filter: blur(6px);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 980px) {
+    .serviceGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .body {
+        padding: 32px 16px 70px;
+    }
+
+    .heroSection {
+        margin-top: 20px;
+    }
+
+    .cardImage {
+        height: 230px;
+    }
+
+    .cardContent {
+        padding: 20px 18px 22px;
+    }
+
+    .cardTitle {
+        font-size: 1.45rem;
+    }
+}
+
+.contactPopupOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(8, 19, 41, 0.58);
+    backdrop-filter: blur(7px);
+}
+
+.contactPopup {
+    position: relative;
+    width: min(100%, 620px);
+    padding: 30px;
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at top right, rgba(95, 206, 255, 0.22), transparent 33%),
+        linear-gradient(180deg, #ffffff 0%, #eef9ff 100%);
+    box-shadow: 0 28px 70px rgba(8, 19, 41, 0.28);
+}
+
+.closePopupButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    background: #dff3ff;
+    color: #123859;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contactEyebrow {
+    margin: 0 0 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #0c87be;
+}
+
+.contactTitle {
+    margin: 0;
+    color: #102846;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-family: open-bold, Arial, Helvetica, sans-serif;
+}
+
+.contactText {
+    margin: 12px 0 0;
+    color: #36506b;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.openingHoursCard {
+    margin-top: 22px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: #ecf8ff;
+    color: #123859;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contactFormGrid {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.fieldLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #163757;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.fieldInput {
+    border: 1px solid #b9dff5;
+    border-radius: 16px;
+    padding: 0.95rem 1rem;
+    font-size: 1rem;
+    color: #102846;
+    background: #fff;
+    outline: none;
+}
+
+.bookAppointmentButton {
+    width: 100%;
+    margin-top: 22px;
+    border: none;
+    border-radius: 18px;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, #0099d7, #123859);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 18px 34px rgba(18, 56, 89, 0.2);
+}
+
+.bookAppointmentButton:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.directContactCard {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 22px;
+    background: #102846;
+    color: #f4fbff;
+}
+
+.contactNumberLabel {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(244, 251, 255, 0.75);
+}
+
+.contactNumber {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+}
+
+.contactActionRow {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.secondaryActionButton,
+.primaryCallButton {
+    min-width: 150px;
+    border-radius: 999px;
+    padding: 0.9rem 1.1rem;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.secondaryActionButton {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: #f4fbff;
+    cursor: pointer;
+}
+
+.primaryCallButton {
+    border: none;
+    background: #5fceff;
+    color: #102846;
+}
+
+@media screen and (max-width: 768px) {
+    .contactPopup {
+        padding: 24px 18px;
+        border-radius: 24px;
+    }
+
+    .contactFormGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactActionRow {
+        flex-direction: column;
+    }
+
+    .secondaryActionButton,
+    .primaryCallButton {
+        width: 100%;
+    }
+}

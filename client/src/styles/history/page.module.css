@@ -1,0 +1,142 @@
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 80px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.subheading {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #4f5b7a;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0070f3;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.statusMessage {
+  color: #4f5b7a;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #0070f3;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background: #0070f3;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #005bb5;
+}
+
+.cancel {
+  background: #e0e0e0;
+  color: #333;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background: #c9c9c9;
+}
+
+/* Booking History */
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.historyItem {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.historyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.bookingType {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e9f2ff;
+  color: #005bb5;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.bookingStatus {
+  text-transform: capitalize;
+  color: #0b6b2d;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.eventName {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}

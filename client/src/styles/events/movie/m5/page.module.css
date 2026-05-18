@@ -1,0 +1,158 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f7ff 0%, #ffffff 100%);
+  color: #1f2340;
+  font-family: Arial, sans-serif;
+}
+
+.flexRow {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+  display: grid;
+  grid-template-columns: minmax(320px, 520px) minmax(320px, 1fr);
+  gap: 32px 40px;
+  align-items: start;
+}
+
+.imageWrapper {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: 0 20px 50px rgba(30, 37, 79, 0.12);
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+.details {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(30, 37, 79, 0.12);
+  line-height: 1.65;
+}
+
+.details h1,
+.heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 18px;
+  color: #171b37;
+}
+
+.details p {
+  margin: 0 0 14px;
+  font-size: 1rem;
+}
+
+.bookNow {
+  margin-top: 18px;
+  padding: 0.9rem 1.4rem;
+  background: linear-gradient(135deg, #df334f, #8a2be2);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  min-width: 180px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 14px 26px rgba(138, 43, 226, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookNow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 30px rgba(138, 43, 226, 0.28);
+}
+
+.about {
+  grid-column: 1 / -1;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px 30px;
+  box-shadow: 0 20px 50px rgba(30, 37, 79, 0.1);
+}
+
+.about h2 {
+  font-size: 1.7rem;
+  margin: 0 0 12px;
+  color: #171b37;
+}
+
+.about p {
+  margin: 0 0 14px;
+  color: #4a5073;
+  line-height: 1.8;
+}
+
+.price {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.termsBtn {
+  margin-top: 8px;
+  background: none;
+  border: 1px solid #0070f3;
+  color: #0070f3;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 12, 28, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.popupContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 560px;
+  width: min(100%, 560px);
+  text-align: left;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.25);
+}
+
+.closeBtn {
+  margin-top: 1rem;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .flexRow {
+    width: min(100% - 32px, 1200px);
+    grid-template-columns: 1fr;
+    padding: 32px 0 56px;
+    gap: 24px;
+  }
+
+  .about {
+    grid-column: auto;
+  }
+
+  .details {
+    padding: 24px 20px;
+  }
+
+  .bookNow {
+    width: 100%;
+  }
+}
