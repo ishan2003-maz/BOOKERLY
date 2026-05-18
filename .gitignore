@@ -6,3 +6,4 @@ yarn-error.log*
 client/.env.local
 server/.env
 .env
+node_modules.zi
