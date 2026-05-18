@@ -23,6 +23,7 @@ export default function m1() {
         <p><strong><GiDuration size={25}style={{ verticalAlign: "middle", marginRight: "6px" }} /></strong> 2hr 39min</p>
         <p><strong><GoPeople size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong> Age Limit - 13 yrs +</p>
         <p><strong><LiaLanguageSolid size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong>Hindi</p>
+        <p className={styles.price}>Ticket Price: ₹299</p>
         <p><strong><LuDrama size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong>Comedy, Drama, Sports</p>
         <MovieBookingModal
           movieTitle="Inception"

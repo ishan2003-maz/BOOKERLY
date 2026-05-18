@@ -18,6 +18,7 @@ export default function Standup() {
                             <img src="/coil_pottery.jpg" alt="coil_pottery"/>
                             <h2>Coil Pottery Workshop</h2>
                             <p>Bunosilo Artisanal:Saltlake, Kolkata</p>
+                            <p className={styles.price}>₹599 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -26,6 +27,7 @@ export default function Standup() {
                             <h2>Boho Texture Art</h2>
                             <p>Bengali, English, Hindi</p>
                             <p>Cafe Buddy`s Espresso, Kolkata</p>
+                            <p className={styles.price}>₹1299 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -34,6 +36,7 @@ export default function Standup() {
                             <h2>Canvas Painting</h2>
                             <p>English,Hindi</p>
                             <p>Bunosilo Artisanal:Saltlake, Kolkata</p>
+                            <p className={styles.price}>₹499 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -42,6 +45,7 @@ export default function Standup() {
                             <h2>Coffee Mug Painting</h2>
                             <p>English,Hindi,Bengali</p>
                             <p>Blue tokai coffee, Jodhpur park, Kolkata</p>
+                            <p className={styles.price}>₹1299 onwards</p>
                         </Link>
                     </div>
                 </div>

@@ -23,6 +23,7 @@ export default function m5() {
         <p><strong>Genre:</strong>Action, Crime, Drama, Thriller</p>
         <p><strong>Age Limit:</strong> UA16+</p>
         <p><strong>Language:</strong> Hindi</p>
+        <p className={styles.price}>Ticket Price: ₹279</p>
         <p><strong>Released on:</strong> 11 Jul, 2025</p>
         <MovieBookingModal
           movieTitle="Maalik"

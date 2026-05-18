@@ -19,6 +19,7 @@ export default function Standup() {
                             <h2>IND VS AUS</h2>
                             <p>English, Hindi</p>
                             <p>Eden Gardens, Kolkata</p>
+                            <p className={styles.price}>₹1299 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -27,6 +28,7 @@ export default function Standup() {
                             <h2>ISL: ATK Mohun Bagan vs Kerala Blasters</h2>
                             <p>English, Hindi</p>
                             <p>Salt Lake Stadium, Kolkata</p>
+                            <p className={styles.price}>₹599 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -35,6 +37,7 @@ export default function Standup() {
                             <h2>Kolkata City Marathon</h2>
                             <p>All Languages</p>
                             <p>Red Row, Kolkata</p>
+                            <p className={styles.price}>₹150 onwards</p>
                         </Link>
                     </div>
                     <div className={styles.card}>
@@ -43,6 +46,7 @@ export default function Standup() {
                             <h2>Screening of Formula 1 - Belgian GP</h2>
                             <p>English</p>
                             <p>Buffalo Wild Wings (Indiranagar), Bengaluru</p>
+                            <p className={styles.price}>₹249 onwards</p>
                         </Link>
                     </div>
                 </div>

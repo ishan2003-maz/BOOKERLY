@@ -24,6 +24,7 @@ export default function m3() {
       <p><strong><GiDuration size={25}style={{ verticalAlign: "middle", marginRight: "6px" }} /></strong> 2hr 13min</p>
         <p><strong><GoPeople size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong> Age Limit - 13 yrs +</p>
         <p><strong><LiaLanguageSolid size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong>Hindi, English</p>
+        <p className={styles.price}>Ticket Price: ₹249</p>
         <p><strong><LuDrama size={25}style={{ verticalAlign: "middle", marginRight: "6px" }}/></strong>Action, Sci-Fi, Thriller</p>
         <MovieBookingModal
           movieTitle="Metro...In Dino"

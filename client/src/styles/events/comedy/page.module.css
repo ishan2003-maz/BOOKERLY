@@ -71,6 +71,12 @@
     text-decoration: none;
 }
 
+.price {
+    color: #d62828;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
 .card img {
     width: 100%;
     max-width: 220px;

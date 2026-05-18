@@ -17,6 +17,7 @@ export default function Movie() {
                             <img src="/inceptionlogo.jpg" alt="Inception"/>
                             <h2>Inception</h2>
                             <p>English</p>
+                            <p className={styles.price}>₹299 onwards</p>
                         </a>
                     </div>
                     <div className={styles.card}>
@@ -24,6 +25,7 @@ export default function Movie() {
                             <img src="/jurassic.jpg" alt="Jurassic World Rebirth"/>
                             <h2>Jurassic World: Rebirth</h2>
                             <p>English/Hindi/Tamil/Telugu</p>
+                            <p className={styles.price}>₹349 onwards</p>
                         </a>
                     </div>
                     <div className={styles.card}>
@@ -31,6 +33,7 @@ export default function Movie() {
                             <img src="/metro.jpg" alt="Metro In Dino"/>
                             <h2>Metro... In Dino</h2>
                             <p>Hindi</p>
+                            <p className={styles.price}>₹249 onwards</p>
                         </a>
                     </div>
                     <div className={styles.card}>
@@ -38,6 +41,7 @@ export default function Movie() {
                             <img src="/fantasticfour.jpg" alt="The Fantastic Four"/>
                             <h2>The Fantastic Four</h2>
                             <p>English/Hindi/Tamil/Telugu</p>
+                            <p className={styles.price}>₹399 onwards</p>
                         </a>
                     </div>
                     <div className={styles.card}>
@@ -45,6 +49,7 @@ export default function Movie() {
                             <img src="/maalik.jpg" alt="Maalik"/>
                             <h2>Maalik</h2>
                             <p>Hindi</p>
+                            <p className={styles.price}>₹279 onwards</p>
                         </a>
                     </div>
                 </div>

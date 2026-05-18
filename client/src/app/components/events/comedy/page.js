@@ -19,6 +19,7 @@ export default function Standup() {
                         <h2>Stand-Up Comedy Open Mic</h2>
                         <p>Hindi</p>
                         <p>Madbee Comedy Club, Kolkata</p>
+                        <p className={styles.price}>₹299 onwards</p>
                     </Link>
                    
                 </div>
@@ -28,6 +29,7 @@ export default function Standup() {
                         <h2>Rajat Sood Live</h2>
                         <p>Hindi</p>
                         <p>The Satire Club, Kolkata</p>
+                        <p className={styles.price}>₹499 onwards</p>
                     </Link>
                    
                 </div>
@@ -37,6 +39,7 @@ export default function Standup() {
                         <h2>Ravi Gupta</h2>
                         <p>Hindi</p>
                         <p>Dhono Dhanyo Auditorium, Kolkata</p>
+                        <p className={styles.price}>₹499 onwards</p>
                     </Link>
                     
                 </div>
@@ -46,6 +49,7 @@ export default function Standup() {
                         <h2>Aakash Gupta</h2>
                         <p>Hindi, English</p>
                         <p>Kala Mandir Auditorium, Kolkata</p>
+                        <p className={styles.price}>₹399 onwards</p>
                     </Link>
                     
                 </div>
