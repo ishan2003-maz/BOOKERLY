@@ -17,7 +17,7 @@ It allows users to book events or services while providing admins with secure ma
 ## Tech Stack
 - Frontend: Next.js, React, Tailwind CSS
 - Backend: Node.js, Express.js
-- Database: MongoDB
+- Database: MongoDB 
 
 ---
 
